@@ -19,6 +19,7 @@ const Box = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #99afaf;
+  box-shadow: 0 1px 60px rgba(0, 0, 0, 0.4), 0 1px 4px rgba(0, 0, 0, 0.1);
   width: 60vw;
   height: 70vh;
   font-size: 1.5rem;
