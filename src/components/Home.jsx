@@ -16,7 +16,7 @@ const Wrap = styled.div`
 const Box = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #99AFAF;
+  background-color: #99afaf;
   width: 60vw;
   height: 70vh;
   font-size: 1.5rem;
@@ -35,7 +35,9 @@ const Home = () => (
         Please follow the instructions below. Feel free to message me at any
         point with questions.
       </Heading>
-      <pre style={{ color: 'white', textAlign: 'center', fontSize: '2rem' }}>ENJOY!!!</pre>
+      <pre style={{ color: 'white', textAlign: 'center', fontSize: '2rem' }}>
+        ENJOY!!!
+      </pre>
     </Box>
   </Wrap>
 );

@@ -1,10 +1,34 @@
-import React from 'react';
+/** ****************************************
+ * Use this component to do
+ * WHATEVER YOU WANT!!!
+ * Delete everything in here if you want and do your thing!
+ * This is your playground where you can test out your skills based on
+ * all the other code in this mini-app!
+ *
+ * When you're all done, feel free to share, I would love to see what you built!
+ * A quick and easy way to do that is to deploy your app to Netlify...
+ * It's completely free and you can do it straight from you github repo.
+ * Have fun!
+ ******************************************* */
+
+// You always have to import React from the 'react' npm module
+// if you are going to use JSX or write a react component
+ import React from 'react';
+
+// styled components is a library that allows you to take a common
+// html tag, and create a component with implicit styling attached (see use below)
 import styled from 'styled-components';
+
+// The 'prop-types' library allows us to check that any 'props',
+// aka the variables/data that we are passing into this component
+// are in the correct shape when they are passed in.
+// We define our rules for PropTypes at the bottom of this file
 import PropTypes from 'prop-types';
 
-// creating a div component to use like any other React/JSX component
-// This CSS acts like a class on this div but allows you to use the
-// div as a JSX component in the USER component below.
+// Creating a named 'div' component, and attaching styles directly to the div
+// This essentially acts as a 'class name' selector in normal CSS stylesheets
+// However it allows us to define it in JSX/React syntax, and add this div to
+// our User component as a subcomponent
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
@@ -19,7 +43,8 @@ const Wrap = styled.div`
 const User = ({ user }) => {
   console.log('🤪 user data 🤓', user);
   return (
-    // using 'prettier-ignore' to ignore a specific formatting error in code below...
+    // using 'prettier-ignore' to ignore a specific formatting error
+    // that we dont care about in code below...
     // prettier-ignore
     <Wrap>
       <h1>This is the User component</h1>
