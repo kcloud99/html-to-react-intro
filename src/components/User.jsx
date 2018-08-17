@@ -13,7 +13,7 @@
 
 // You always have to import React from the 'react' npm module
 // if you are going to use JSX or write a react component
- import React from 'react';
+import React from 'react';
 
 // styled components is a library that allows you to take a common
 // html tag, and create a component with implicit styling attached (see use below)
@@ -41,7 +41,7 @@ const Wrap = styled.div`
 // using ES6 syntax destructuring { user } to pull the user object out of the 'props'
 // passed to this component from it's parent
 const User = ({ user }) => {
-  console.log('🤪 user data 🤓', user);
+  console.log('🤪 USER DATA 🤓', user);
   return (
     // using 'prettier-ignore' to ignore a specific formatting error
     // that we dont care about in code below...

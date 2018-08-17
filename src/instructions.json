@@ -1,0 +1,64 @@
+{
+  "instructions" : [
+    {
+      "num" : "Note: ",
+      "desc" : "I would highly recommend listening to the recent Syntax podcast episode on React (8/15/18) on your favorite podcast player. They give a great overview of what React is and a lot of the important aspects to know before diving into some code."
+    },
+    {
+      "num" : "1. ",
+      "desc" : "Now that you have the repo downloaded, lets dive into each file in the codebase."
+    },
+    {
+      "num" : "2. ",
+      "desc" : "First lets take a look at the all the starter and configuration files that we won't really be dealing with here, but are important for running this application."
+    },
+    {
+      "num" : "3. ",
+      "desc" : "Package.json => Check out all the dependencies we are using for both development and production. Feel free to dig a bit deeper if you want, but we will be going over most of these below."
+    },
+    {
+      "num" : "4. ",
+      "desc" : "Webpack.config.js => Webpack is a client side code bundler, which takes our codebase, runs it through some functions, and spits out code the browsers will understand. Here we use different 'loaders' to manage our different file types and ensure they compile correctly. Most notably is the use of babel, which takes our ES6 style code and compiles it to ES5 which is fully supported by all (most) browsers."
+    },
+    {
+      "num" : "5. ",
+      "desc" : "Following on webpack, we have our '.babelrc' file => This file defines a specific set of presets and plugins we want our Babel compiler to use on our code. In our case we want it to support inline imports, our enviornment variables, react, and stage-2 (Allowing us to use javascript that is still in Stage 2 or above in the ECMA script process)."
+    },
+    {
+      "num" : "6. ",
+      "desc" : "Finally, we have our '.eslintrc.json' file => This is our configuration for our code linter, esLint... We use esLint and prettier to ensure we are following good coding practices and creating well formatted and readable code throughout the project. This file is where we configure any rules. When you start up the application, you should not see any errors in your terminal where webpack is running. If you create any linting errors while coding this is where they will show up. Try to follow the rules outlined from esLint and Prettier and keep writing clean code!"
+    },
+    {
+      "num" : "7. ",
+      "desc" : "You many have also noticed the 'dist/' folder. This is where all the compiled code lives, after it is run through webpack and all the loaders defined there. The dist folder is the actual output that we will be sending to the browser of all the users of our application."
+    },
+    {
+      "num" : "8. ",
+      "desc" : "Now we can get into the heart of our codebase, the index.html, index.js, App.css, and App.jsx. Go ahead and open each of these files in the order listed here and read the comments explaining each file and what it is doing. When you get to App.jsx see the next note in this list."
+    },
+    {
+      "num" : "9. ",
+      "desc" : "Looking at our App.jsx, this is the main parent container/component for our application. For this app, this is where our logic and data will live and we will pass all data down to subcomponents using props (explained in more detail in code comments). Read through the App.jsx comments and try to make sense of a little bit of the code here, but if it is too confusing, dont worry, we will be going into more detail in other components."
+    },
+    {
+      "num" : "10. ",
+      "desc" : "Now it's time to play around a little bit... Below I have written a few guidelines as to the direction I think you should go with this as you try to figure out the codebase, however this repo was designed specifically to allow you to mess around with, break, tweak, or completely change. Have fun learning some React and JSX!"
+    },
+    {
+      "num" : "11. ",
+      "desc" : "After going through the App component, I would move to the home component, and see how this instruction page is implemented."
+    },
+    {
+      "num" : "12. ",
+      "desc" : "Next I would move onto the Navbar component and see if you can get the hang of that one as well. These are the only 2 components that are fully written out, and don't REQUIRE you to change anything. However, please feel free to dive in if you would like and change anything you see fit!"
+    },
+    {
+      "num" : "13. ",
+      "desc" : "After that, I would move to the Movies and MovieItem components. If you navigate there in the application you will see that it is part way implemented, but requires some CSS and/or JSX tweaking to get it more polished."
+    },
+    {
+      "num" : "14. ",
+      "desc" : "Finally, move on to the User component. If you look at this component in the browser you will see another set of instructions for this page. Nothing on this page is implemented, except I have preloaded the data into the component for you to play with. I am excited to see what you built!"
+    }
+  ]
+}

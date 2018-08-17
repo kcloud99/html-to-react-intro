@@ -89,6 +89,7 @@ class App extends Component {
   // This might change in future versions of React, but make sure you are
   // ALWAYS wrapping any JSX in a single tag/node
   render() {
+    // destructuring our different data nodes out of our state object
     const { movies, user } = this.state;
     return (
       // Here we are using our styled div created above
