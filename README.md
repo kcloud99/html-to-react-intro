@@ -5,7 +5,6 @@ A brief introduction repo for developers who know HTML/CSS and moving them into 
 1. Fork this repo into your own Github account
 2. Clone the repo down to your local machine:
 ```
-cd Practice-Projects
 git clone https://github.com/ **YOUR HANDLE HERE** /html-to-react-intro.git
 cd html-to-react-intro
 ```
