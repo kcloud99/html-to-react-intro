@@ -4,8 +4,7 @@
   "description": "quick practice app for devs moving from html/css to react and styled components",
   "main": "index.js",
   "scripts": {
-    "react-dev": "webpack --mode development --watch",
-    "react-dev-temp": "webpack-dev-server --mode development --watch",
+    "react-dev": "webpack-dev-server --mode development --watch",
     "live": "live-server --port=1182 dist/",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
