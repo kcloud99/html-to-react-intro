@@ -4,7 +4,7 @@
   "description": "quick practice app for devs moving from html/css to react and styled components",
   "main": "index.js",
   "scripts": {
-    "react-dev": "webpack --mode development --watch",
+    "react-dev": "webpack-dev-server --mode development --watch",
     "live": "live-server --port=1182 dist/",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -53,7 +53,6 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "inline-import": "^1.2.4",
-    "live-server": "^1.2.0",
     "prettier": "^1.14.2",
     "style-loader": "^0.22.1",
     "webpack-cli": "^3.1.0",
