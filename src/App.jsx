@@ -73,7 +73,7 @@ class App extends Component {
   // We can then pass that data to other components via 'props'
   componentDidMount() {
     axios
-      .get('http://www.omdbapi.com/?apikey=cf68ae07&s=avengers')
+      .get('https://www.omdbapi.com/?apikey=cf68ae07&s=avengers')
       .then(response => this.setState({ movies: response.data.Search }))
       .catch(err => console.log('👿', err));
 
