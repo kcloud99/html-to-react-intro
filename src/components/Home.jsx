@@ -1,12 +1,17 @@
+/**
+ * Don't worry about this file, everything in here will be in more detail
+ * in other files in this app!
+ */
 import React from 'react';
 import styled from 'styled-components';
 
 import instruct from '../instructions.json';
+import background from '../images/home-background.jpg';
 
 const Wrap = styled.div`
   width: 100vw;
   height: 90vh;
-  background-image: url('images/home-background.jpg');
+  background-image: url(${props => props.background});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -44,7 +49,7 @@ const Text = styled.p`
 
 // prettier-ignore
 const Home = () => (
-  <Wrap>
+  <Wrap background={background}>
     <Box>
       <Heading>Learning JSX/React from HTML/CSS</Heading>
       <SubHeading>

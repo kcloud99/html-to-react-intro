@@ -10,6 +10,9 @@ import styled from 'styled-components';
 // the client side routes defined in our App.jsx component
 import { Link } from 'react-router-dom';
 
+// using webpack file-loader to import the image that we want from our images folder
+import logo from '../images/react.svg';
+
 // Creating a named 'div' component, and attaching styles directly to the div
 // This essentially acts as a 'class name' selector in normal CSS stylesheets
 // However it allows us to define it in JSX/React syntax, and add this div to
@@ -82,8 +85,10 @@ const Navbar = () => { // eslint-disable-line
         <NavLink to="/movies">Movies</NavLink>
         <NavLink to="/user">User</NavLink>
       </NavLinkContainer>
-      {/* Since 'Logo' is a styled img tag, we can pass an src to it like a normal img tag */}
-      <Logo src="images/react.svg" />
+      {/* Since 'Logo' is a styled img tag, we can pass an src to it
+      like a normal img tag. In this case, we're passing it the image
+      that we imported at the start of this file */}
+      <Logo src={logo} />
     </Nav>
   );
 };
