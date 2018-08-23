@@ -84,6 +84,7 @@ const Navbar = () => { // eslint-disable-line
         {/* Use of our styled Link components defined above */}
         <NavLink to="/movies">Movies</NavLink>
         <NavLink to="/user">User</NavLink>
+        <NavLink to="/playground">Playground</NavLink>
       </NavLinkContainer>
       {/* Since 'Logo' is a styled img tag, we can pass an src to it
       like a normal img tag. In this case, we're passing it the image
