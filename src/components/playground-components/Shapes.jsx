@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Mustache from './Mustache';
+// import Heart from './Heart';
 
 /**
  ** In this file, you'll find some basic shapes.
@@ -16,7 +18,7 @@ const ShapeGrid = styled.section`
   display: grid;
   grid-gap: 1rem;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 100%;
   width: 100%;
   justify-items: center;
@@ -58,6 +60,16 @@ const Star = styled.div`
   height: 40vmin;
   width: 40vmin;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+  :hover {
+    animation: spin 500ms alternate ease-in-out;
+  }
+
+  @keyframes spin {
+    0% {transform: rotate(0deg)}
+    50% {transform: rotate(180deg)}
+    100% {transform: rotate(360deg)}
+  }
 `;
 
 // try playing around with these shapes!  You could always try rendering the star inside of the square or adjusting sizing and positioning!
@@ -67,6 +79,8 @@ const AssembledShapes = () => (
     <Square />
     <Diamond />
     <Star />
+    <Mustache />
+    {/* <Heart /> */}
   </ShapeGrid>
 );
 

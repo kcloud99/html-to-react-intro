@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 const Heart = styled.div`
   color: #bd2d2d;
-  position: absolute;
+  position: relative;
   margin-top: 6px;
   margin-left: 5px;
   width: 36vmin;
