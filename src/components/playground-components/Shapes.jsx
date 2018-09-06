@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Mustache from './Mustache';
+// import Heart from './Heart';
 
 /**
  ** In this file, you'll find some basic shapes.
@@ -16,7 +18,7 @@ const ShapeGrid = styled.section`
   display: grid;
   grid-gap: 1rem;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 100%;
   width: 100%;
   justify-items: center;
@@ -67,6 +69,8 @@ const AssembledShapes = () => (
     <Square />
     <Diamond />
     <Star />
+    <Mustache />
+    {/* <Heart /> */}
   </ShapeGrid>
 );
 
