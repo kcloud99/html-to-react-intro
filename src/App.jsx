@@ -31,6 +31,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Movies from './components/Movies';
 import User from './components/User';
+import Playground from './components/Playground';
 
 // App.css is where we write our 'global' styles
 // that we want to attach to the 'body' or 'html' tags
@@ -105,6 +106,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/movies" component={() => <Movies movies={movies} />} />
           <Route path="/user" component={() => <User user={user} />} />
+          <Route path="/playground" component={() => <Playground />} />
         </Switch>
       </Wrap>
     );
