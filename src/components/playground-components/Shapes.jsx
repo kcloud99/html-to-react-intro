@@ -60,6 +60,16 @@ const Star = styled.div`
   height: 40vmin;
   width: 40vmin;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+  :hover {
+    animation: spin 500ms alternate ease-in-out;
+  }
+
+  @keyframes spin {
+    0% {transform: rotate(0deg)}
+    50% {transform: rotate(180deg)}
+    100% {transform: rotate(360deg)}
+  }
 `;
 
 // try playing around with these shapes!  You could always try rendering the star inside of the square or adjusting sizing and positioning!
